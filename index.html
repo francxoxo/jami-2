@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#0a0a0a">
+        <title>Jami 2</title>
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Jami 2">
+        <meta property="og:image" content="preview.jpg">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Jami 2">
+        <meta name="twitter:image" content="preview.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div id="confetti-layer" aria-hidden="true"></div>
+
+        <main class="app-screens">
+
+            <section id="screen-hero" class="screen active" data-screen="hero">
+                <div class="screen-inner">
+                    <span class="eyebrow">Jamila, abbiamo un problema</span>
+                    <h1 class="hero-title">Il film non verrà proiettato</h1>
+                    <p class="hero-text">Peccato, per una volta ero contento di fare qualcosa che mi spaventa. Forse il
+                        destino voleva comunicarci qualcosa, chissà.</p>
+
+                    <figure class="cinema-frame">
+                        <img src="screen-cinema.png" alt="Screenshot dell'annullamento della proiezione"
+                            class="cinema-screen-img" id="cinema-img">
+                        <figcaption>Prova certificata del misfatto</figcaption>
+                    </figure>
+
+                    <button class="btn btn-primary btn-full" id="btn-to-alternatives" type="button">
+                        Non piangere! Ho delle solide soluzioni
+                        <span class="btn-arrow"><i class="hgi-stroke hgi-arrow-right-01"></i></span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="screen-alternatives" class="screen" data-screen="alternatives">
+                <div class="screen-inner">
+                    <button class="btn-back" data-back="hero" type="button">
+                        <i class="hgi-stroke hgi-arrow-left-01"></i> Indietro
+                    </button>
+                    <span class="eyebrow">Piano B</span>
+                    <h2 class="section-title">Scegli come recuperare la giornata</h2>
+                    <p class="section-text">Compila questo breve questionario e mandami lo screen del risultato 🫩​
+                    </p>
+
+                    <div class="cards">
+
+                        <article class="card" data-card="alpaca">
+                            <header class="card-header">
+                                <div class="icon-placeholder card-icon" data-icon="alpaca"></div>
+                                <div class="card-heading">
+                                    <h3>Alpaca a Venusio</h3>
+                                    <p>Nonostante la cattività in cui si trovano queste bestiole, puoi fare la scelta
+                                        incoerente e visitare questi meravigliosi animali!</p>
+                                </div>
+                                <button class="fav-toggle" type="button" data-fav aria-pressed="false"
+                                    aria-label="Aggiungi Alpaca a Venusio alla scelta">
+                                    <i class="fav-icon hgi-stroke hgi-favourite"></i>
+                                </button>
+                            </header>
+
+                            <div class="card-body">
+                                <div class="fluff-widget">
+                                    <div class="fluff-row">
+                                        <span class="fluff-label" data-fluff-label>Non toccarmi</span>
+                                        <span class="fluff-count"><span data-fluff-count>0</span>/5</span>
+                                    </div>
+                                    <div class="fluff-bar">
+                                        <div class="fluff-bar-fill" data-fluff-fill></div>
+                                    </div>
+                                    <button class="btn btn-ghost btn-small" type="button" data-fluff-btn>
+                                        <span class="fluff-emoji">🤍</span> Coccola
+                                    </button>
+                                </div>
+
+                                <div class="rating-widget">
+                                    <p class="widget-label">Quanto ti convince? (1-10)</p>
+                                    <div class="rating-row" data-rating-group>
+                                        <button class="rating-pill" type="button" data-rating="1">1</button>
+                                        <button class="rating-pill" type="button" data-rating="2">2</button>
+                                        <button class="rating-pill" type="button" data-rating="3">3</button>
+                                        <button class="rating-pill" type="button" data-rating="4">4</button>
+                                        <button class="rating-pill" type="button" data-rating="5">5</button>
+                                        <button class="rating-pill" type="button" data-rating="6">6</button>
+                                        <button class="rating-pill" type="button" data-rating="7">7</button>
+                                        <button class="rating-pill" type="button" data-rating="8">8</button>
+                                        <button class="rating-pill" type="button" data-rating="9">9</button>
+                                        <button class="rating-pill" type="button" data-rating="10">10</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card" data-card="tisana">
+                            <header class="card-header">
+                                <div class="icon-placeholder card-icon" data-icon="tea"></div>
+                                <div class="card-heading">
+                                    <h3>Tisana al bar e dolcetto</h3>
+                                    <p>L'idea più sconveniente del mondo ma quella che ti fa stare più serena, strana
+                                        creatura.</p>
+                                </div>
+                                <button class="fav-toggle" type="button" data-fav aria-pressed="false"
+                                    aria-label="Aggiungi Tisana al bar e dolcetto alla scelta">
+                                    <i class="fav-icon hgi-stroke hgi-favourite"></i>
+                                </button>
+                            </header>
+
+                            <div class="card-body">
+                                <p class="widget-label">Quale dolcetto preparerai?</p>
+                                <div class="chip-group" data-chip-group>
+                                    <button class="chip" type="button" data-chip>Biscotti al burro</button>
+                                    <button class="chip" type="button" data-chip>Brownie al cioccolato</button>
+                                    <button class="chip" type="button" data-chip>Crostata alla marmellata</button>
+                                    <button class="chip" type="button" data-chip>Plumcake allo yogurt</button>
+                                    <button class="chip" type="button" data-chip>Non farò nulla, sono pigra e instabile
+                                        mentalmente</button>
+                                </div>
+
+                                <div class="rating-widget">
+                                    <p class="widget-label">Quanto ti convince? (1-10)</p>
+                                    <div class="rating-row" data-rating-group>
+                                        <button class="rating-pill" type="button" data-rating="1">1</button>
+                                        <button class="rating-pill" type="button" data-rating="2">2</button>
+                                        <button class="rating-pill" type="button" data-rating="3">3</button>
+                                        <button class="rating-pill" type="button" data-rating="4">4</button>
+                                        <button class="rating-pill" type="button" data-rating="5">5</button>
+                                        <button class="rating-pill" type="button" data-rating="6">6</button>
+                                        <button class="rating-pill" type="button" data-rating="7">7</button>
+                                        <button class="rating-pill" type="button" data-rating="8">8</button>
+                                        <button class="rating-pill" type="button" data-rating="9">9</button>
+                                        <button class="rating-pill" type="button" data-rating="10">10</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card" data-card="giro">
+                            <header class="card-header">
+                                <div class="icon-placeholder card-icon" data-icon="route"></div>
+                                <div class="card-heading">
+                                    <h3>Giro in un posto poco affollato</h3>
+                                    <p>Una po' d'aria fresca, un attacco di panico e il Lexotan nella borsetta</p>
+                                </div>
+                                <button class="fav-toggle" type="button" data-fav aria-pressed="false"
+                                    aria-label="Aggiungi Giro in un posto poco affollato alla scelta">
+                                    <i class="fav-icon hgi-stroke hgi-favourite"></i>
+                                </button>
+                            </header>
+
+                            <div class="card-body">
+                                <p class="widget-label">Che ritmo preferisci?</p>
+                                <div class="segmented" data-segmented>
+                                    <button class="segment" type="button" data-segment>Passeggiata tranquilla</button>
+                                    <button class="segment" type="button" data-segment>Vista panoramica</button>
+                                    <button class="segment" type="button" data-segment>Ossessivo-Compulsivo</button>
+                                </div>
+
+                                <div class="rating-widget">
+                                    <p class="widget-label">Quanto ti convince? (1-10)</p>
+                                    <div class="rating-row" data-rating-group>
+                                        <button class="rating-pill" type="button" data-rating="1">1</button>
+                                        <button class="rating-pill" type="button" data-rating="2">2</button>
+                                        <button class="rating-pill" type="button" data-rating="3">3</button>
+                                        <button class="rating-pill" type="button" data-rating="4">4</button>
+                                        <button class="rating-pill" type="button" data-rating="5">5</button>
+                                        <button class="rating-pill" type="button" data-rating="6">6</button>
+                                        <button class="rating-pill" type="button" data-rating="7">7</button>
+                                        <button class="rating-pill" type="button" data-rating="8">8</button>
+                                        <button class="rating-pill" type="button" data-rating="9">9</button>
+                                        <button class="rating-pill" type="button" data-rating="10">10</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card" data-card="nulla">
+                            <header class="card-header">
+                                <div class="icon-placeholder card-icon" data-icon="lollipop"></div>
+                                <div class="card-heading">
+                                    <h3>Non usciamo</h3>
+                                    <p>Lascia che questo rapporto esista solo in digitale, sempre scappando da quelle
+                                        che sono le cose belle della vita. Abbandonati all'idealizzazione eterna di me
+                                        facendomi credere che sia tutto ok. Corri al riparo quando c'è da guardare
+                                        qualcuno negli occhi o quando c'è da scontrarsi con delle emozioni diverse dalle
+                                        solite due che provi da chissà quanti anni ma che rendono la tua vita la tua
+                                        piccola scatola sicura. La mia preferenza va qui!</p>
+                                </div>
+                                <button class="fav-toggle" type="button" data-fav aria-pressed="false"
+                                    aria-label="Aggiungi Non usciamo alla scelta">
+                                    <i class="fav-icon hgi-stroke hgi-favourite"></i>
+                                </button>
+                            </header>
+
+                            <div class="card-body">
+                                <div class="rating-widget">
+                                    <p class="widget-label">Quanto ti convince? (1-10)</p>
+                                    <div class="rating-row" data-rating-group>
+                                        <button class="rating-pill" type="button" data-rating="1">1</button>
+                                        <button class="rating-pill" type="button" data-rating="2">2</button>
+                                        <button class="rating-pill" type="button" data-rating="3">3</button>
+                                        <button class="rating-pill" type="button" data-rating="4">4</button>
+                                        <button class="rating-pill" type="button" data-rating="5">5</button>
+                                        <button class="rating-pill" type="button" data-rating="6">6</button>
+                                        <button class="rating-pill" type="button" data-rating="7">7</button>
+                                        <button class="rating-pill" type="button" data-rating="8">8</button>
+                                        <button class="rating-pill" type="button" data-rating="9">9</button>
+                                        <button class="rating-pill" type="button" data-rating="10">10</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <button class="btn btn-primary btn-full" id="btn-to-confirm" type="button" disabled>
+                        Vai al riepilogo
+                        <span class="btn-arrow"><i class="hgi-stroke hgi-arrow-right-01"></i></span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="screen-confirm" class="screen" data-screen="confirm">
+                <div class="screen-inner">
+                    <button class="btn-back" data-back="alternatives" type="button">
+                        <i class="hgi-stroke hgi-arrow-left-01"></i> Indietro
+                    </button>
+                    <span class="eyebrow">Ultimo passo</span>
+                    <h2 class="section-title">Riepilogo</h2>
+                    <p class="section-text">Ecco cosa hai scelto. Puoi tornare indietro e cambiare idea quando vuoi
+                        (anche se orribili cose sono successe ai maghi quando si sono intromessi nel tempo).</p>
+
+                    <div class="summary-list" id="summary-list"></div>
+
+                    <div class="confirm-block" id="confirm-block">
+                        <button class="btn btn-primary btn-full" id="btn-confirm" type="button">
+                            Conferma
+                            <span class="btn-arrow">🎉</span>
+                        </button>
+                    </div>
+
+                    <div class="final-message" id="final-message" hidden>
+                        <div class="icon-placeholder final-icon"><i class="hgi-stroke hgi-checkmark-circle-02"></i>
+                        </div>
+                        <h3>Pisciasotto</h3>
+                        <button class="btn btn-ghost btn-full" id="btn-restart" type="button">Ricomincia</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
