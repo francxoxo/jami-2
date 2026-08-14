@@ -120,7 +120,7 @@ img {
 .eyebrow {
     display: inline-block;
     width: fit-content;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.04em;
     color: var(--accent);
@@ -132,7 +132,6 @@ img {
     line-height: 1.02;
     letter-spacing: -0.02em;
     margin-top: var(--space-3);
-    white-space: nowrap;
 }
 
 .hero-text {
@@ -156,30 +155,23 @@ img {
 }
 
 .cinema-frame {
-    position: relative;
     margin-top: var(--space-5);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    aspect-ratio: 4 / 3;
 }
 
 .cinema-screen-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: var(--surface);
 }
 
 .cinema-frame figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: var(--space-3) var(--space-4);
+    margin-top: var(--space-2);
     font-size: 0.8rem;
+    font-style: italic;
     color: var(--text-secondary);
-    background: linear-gradient(to top, rgba(10, 10, 10, 0.85), transparent);
 }
 
 .icon-placeholder {
